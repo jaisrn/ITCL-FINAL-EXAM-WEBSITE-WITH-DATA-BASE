@@ -1,0 +1,14 @@
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.grid {
+  gap: 30px;
+}
+
+.card {
+  margin: 0;
+}

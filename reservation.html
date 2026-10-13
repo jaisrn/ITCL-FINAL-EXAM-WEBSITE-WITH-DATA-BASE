@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyHaven Airlines | Flight Reservation Request</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Sky<span>Haven</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="registration.html">Passenger Registration</a></li>
+        <li><a href="reservation.html" class="active">Flight Reservation</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-title"><h1>Flight Reservation Request</h1></div>
+
+  <section class="bg-light">
+    <div class="container">
+      <form class="form-box" id="reservationForm">
+        <div class="field"><label for="email">Registered Email</label><input type="email" id="email" name="email" placeholder="Email used in registration" required></div>
+
+        <div class="field">
+          <label>Trip Type</label>
+          <div class="radio-group">
+            <label><input type="radio" name="tripType" value="Round-trip" checked> Round-trip</label>
+            <label><input type="radio" name="tripType" value="One-way"> One-way</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="origin">From</label>
+            <select id="origin" name="origin" required>
+              <option value="">Select origin</option>
+              <option>Manila</option><option>Cebu</option><option>Davao</option>
+              <option>Iloilo</option><option>Singapore</option><option>Tokyo</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="destination">To</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select destination</option>
+              <option>Manila</option><option>Cebu</option><option>Davao</option>
+              <option>Iloilo</option><option>Singapore</option><option>Tokyo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field"><label for="departDate">Departure Date</label><input type="date" id="departDate" name="departDate" required></div>
+          <div class="field" id="returnWrap"><label for="returnDate">Return Date</label><input type="date" id="returnDate" name="returnDate"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="travelClass">Class</label>
+            <select id="travelClass" name="travelClass" required>
+              <option>Economy</option><option>Premium Economy</option><option>Business</option>
+            </select>
+          </div>
+          <div class="field"><label for="passengers">Number of Passengers</label><input type="number" id="passengers" name="passengers" min="1" max="9" value="1" required></div>
+        </div>
+
+        <div class="field"><label for="remarks">Remarks (optional)</label><textarea id="remarks" name="remarks" placeholder="Special requests, meal, wheelchair, etc."></textarea></div>
+
+        <button type="submit" class="btn">Submit Request</button>
+        <div class="message"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>&copy; <span id="year"></span> SkyHaven Airlines. All rights reserved.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

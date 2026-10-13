@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyHaven Airlines | Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Sky<span>Haven</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+      <ul id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="registration.html">Passenger Registration</a></li>
+        <li><a href="reservation.html">Flight Reservation</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Fly Farther. Fly Easier.</h1>
+    <p>Register as a passenger and send your flight reservation request in just a few minutes.</p>
+    <a href="reservation.html" class="btn">Request a Flight</a>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2>Why Fly With Us</h2>
+      <p class="subtitle">Comfortable, affordable and reliable travel.</p>
+      <div class="grid">
+        <div class="card"><div class="icon">&#9992;</div><h3>Wide Destinations</h3><p>Domestic and international routes to your favorite places.</p></div>
+        <div class="card"><div class="icon">&#128176;</div><h3>Affordable Fares</h3><p>Great prices for Economy, Premium and Business classes.</p></div>
+        <div class="card"><div class="icon">&#128337;</div><h3>On-Time Service</h3><p>We value your time with reliable schedules.</p></div>
+        <div class="card"><div class="icon">&#128222;</div><h3>Friendly Support</h3><p>Our team is ready to help before and after your flight.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container">
+      <h2>Available Destinations</h2>
+      <p class="subtitle">This airline is only exclusive to certain routes for passengers.</p>
+      <table>
+        <thead><tr><th>From</th><th>To</th><th>Flight Time</th><th>Starting Fare</th></tr></thead>
+        <tbody>
+          <tr><td>Manila</td><td>Cebu</td><td>1h 30m</td><td>PHP 1,999</td></tr>
+          <tr><td>Manila</td><td>Davao</td><td>2h 00m</td><td>PHP 2,499</td></tr>
+          <tr><td>Manila</td><td>Singapore</td><td>3h 40m</td><td>PHP 5,999</td></tr>
+          <tr><td>Manila</td><td>Tokyo</td><td>4h 20m</td><td>PHP 9,499</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="text-align:center">
+      <h2>How It Works</h2>
+      <p class="subtitle">Three easy steps</p>
+      <div class="grid steps-grid">
+        <div class="card"><h3>1. Register</h3><p>Fill out the Passenger Registration form.</p></div>
+        <div class="card"><h3>2. Request</h3><p>Submit your Flight Reservation Request.</p></div>
+        <div class="card"><h3>3. Confirm</h3><p>Our team reviews and confirms your booking.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; <span id="year"></span> SkyHaven Airlines. All rights reserved.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
